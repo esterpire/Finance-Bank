@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankster - Digital Bank</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="navbar__container">
+                <a href="/" id="navbar-logo">Bankster</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="services.html" class="navbar__links">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="pricing.html" class="navbar__links">Pricing</a>
+                    </li>
+                </ul>
+                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1>Easiest way to open a digital bank account</h1>
+                    <p>Join today and receive $250 credits. Valid for new customers only in select states.</p>
+                </div>
+                <div class="hero__image">
+                    <img id="hero-img" src="hero-pic-1.svg" alt="Illustration of credit card">
+                </div>
+            </div>
+        </section>
+
+        <!-- Rotating Logos Section -->
+        <div class="rotating-logos">
+            <div class="rotating-logos__track">
+                <span class="logo-text">LEGION</span>
+                <span class="logo-text">TRUST</span>
+                <span class="logo-text">DISTRITOR</span>
+                <span class="logo-text">VENTURX</span>
+                <span class="logo-text">CAPITAL</span>
+                <span class="logo-text">HEDGIES</span>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <p class="intro-text">
+                    Discover how our financial and investment management SaaS 
+                    can help you take control of your finances with ease and efficiency.
+                </p>
+                <div class="features-grid">
+                    <div class="features-item">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <h3>Secure & Reliable</h3>
+                        <p>
+                            We prioritize your financial security with end-to-end 
+                            encryption, ensuring your data is protected 24/7.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <i class="fa-solid fa-chart-line icon"></i>
+                        <h3>AI-Powered Insights</h3>
+                        <p>
+                            Our intelligent AI systems provide actionable financial insights
+                            to help you grow your wealth and optimize investments.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <i class="fa-solid fa-user icon"></i>
+                        <h3>User-Friendly Interface</h3>
+                        <p>
+                            Our modern, intuitive interface makes engaging your finances 
+                            simple and stress-free, regardless of your financial expertise.
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <i class="fa-solid fa-gauge-simple-high icon"></i>
+                        <h3>Real-Time Data</h3>
+                        <p>
+                            Access real-time financial data to make faster, better-informed 
+                            decisions for your personal or business finances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing section -->
+<section class="services">
+    <h2>Choose the right plan for you</h2>
+
+    <!-- Pricing toggle button -->
+    <div class="pricing-toggle">
+        <div class="toggle-container">
+            <span class="toggle-option">Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="pricing-toggle-checkbox" onclick="switchPricing()">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-option">Yearly</span>
+        </div>
+        <div class="save-percentage-container">
+            <span class="save-percentage">Save 20%</span>
+        </div>
+    </div>
+
+    <div class="services__container">
+        <!-- Basic Plan -->
+        <div class="services__card">
+            <div class="card-content">
+                <h3>Basic Plan</h3>
+                <div class="card-price">
+                    <p class="price monthly-price">$10/mo</p>
+                    <p class="price yearly-price hidden">$8/mo</p>
+                    <a href="signup.html" class="price-btn">Get Started</a>
+                    <p id="small-desc">Everything you need to get started</p>
+                </div>
+                <div class="card-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Digital Checking Account</li>
+                        <li>Access to basic features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="services__card">
+            <div class="card-content">
+                <h3>Standard Plan</h3>
+                <div class="card-price">
+                    <p class="price monthly-price">$30/mo</p>
+                    <p class="price yearly-price hidden">$24/mo</p>
+                    <a href="signup.html" class="price-btn">Get Started</a>
+                    <p id="small-desc">Perfect for individuals looking to take control of their finances</p>
+                </div>
+                <div class="card-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Automatic Expense Tracking</li>
+                        <li>Customizable Budgets</li>
+                        <li>Personalized Financial Reports</li>
+                        <li>Goal-Based Savings Tracking</li>
+                        <li>Email & Chat Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="services__card">
+            <div class="card-content">
+                <h3>Premium Plan</h3>
+                <div class="card-price">
+                    <p class="price monthly-price">$50/mo</p>
+                    <p class="price yearly-price hidden">$40/mo</p>
+                    <a href="signup.html" class="price-btn">Get Started</a>
+                    <p id="small-desc">Ideal for investors and advanced users</p>
+                </div>
+                <div class="card-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li>Automatic Expense Tracking</li>
+                        <li>Customizable Budgets</li>
+                        <li>Personalized Reports</li>
+                        <li>Investment Management</li>
+                        <li>AI-Powered Financial Insights</li>
+                        <li>Priority Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="quiz-link" style="text-align: center; margin-top: 2rem;">
+    <p>Not sure which plan is right for you?</p>
+    <a href="quiz.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #0ce48d; color: white; text-decoration: none; border-radius: 4px;">Take Our Plan Finder Quiz</a>
+</div>
+</div>
+    
+        </section>
+        <!--Fotter Section-->
+        <footer>
+            <div class ="footer__container">
+                <div class="footer__link">
+                    <div class="footer__link-wrapper">
+                        <div class="footer__link-items">
+                            <h2> About Us</h2>
+                            <a href="/how-it-works.html">How it works</a>
+                            <a href="/testimonials.html">Testimonials</a>
+                            <a href="/testimonials.html">Careers</a>
+                            <a href="/testimonials.html">Investments</a>
+                            <a href="/testimonials.html">Terms of Services</a>
+                        </div>
+                        
+                        <div class="footer__link-items">
+                            <h2> Contact Us</h2>
+                            <a href="/contact.html">Contact</a>
+                            <a href="/testimonials.html">Support</a>
+                            <a href="/testimonials.html">File a Claim</a>
+                            <a href="/testimonials.html">Sponsorships</a>
+            
+                        </div>
+                    </div>
+
+                        <div class="footer__link-wrapper">
+
+                        <div class="footer__link-items">
+                            <h2>Finances</h2>                         
+                             <a href="/portfolio.html">Portfolio</a>
+                             <a href="/testimonials.html">News</a>
+                             <a href="/testimonials.html">Locations</a>
+                             <a href="/testimonials.html">Credit Cards</a>
+                            
+                        </div>
+                        <div class="footer__link-items">
+                            <h2>Social Media</h2>                         
+                             <a href="/https://www.instagram.com"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             >Instagram</a>
+                            
+                             <a href="/https://www.facebook.com"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             >Facebook</a>
+                             
+                             <a href="/https://www.twitter.com"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             >Twitter</a>
+
+                             <a href="/https://www.linkedIn.com"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             >LinkedIn</a
+                             >   
+                        </div>
+                        </div>
+                    </div>
+                <section class="social__media">
+                <div class="social__media-wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">Bankster</a>
+                    </div>
+                    <p class="website__rights">
+                        © Bankster <span id="year"></span> All rights reserved
+
+                    </p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com" 
+                        class="social__icon-link"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="Facebook"
+                         >
+                         <i class="fa-brands fa-facebook"></i>
+                        
+                        </a>
+                        <a href="https://www.instagram.com" 
+                         class="social__icon-link"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="Instagram"
+                         >
+                         <i class="fa-brands fa-instagram"></i>
+                        
+                        </a>
+                        <a href="https://www.twitter.com" 
+                        class="social__icon-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Twitter"
+                        >
+                        <i class="fa-brands fa-twitter"></i>
+                       
+                       </a>
+                       <a href="https://www.linkedIn.com" 
+                        class="social__icon-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        >
+                        <i class="fa-brands fa-linkedin"></i>
+                       </div>
+                   </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+    </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
